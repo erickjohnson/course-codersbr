@@ -6,13 +6,17 @@ export default class Counter extends React.Component {
   }
 
   plusOne = () => {
-    this.setState({ number: this.state.number + 1 })
-    //return this.state.number++
+    this.changeNumber(1) 
   }
   minusOne = () => {
-    this.setState({ number: this.state.number - 1 })
+    this.changeNumber(-1) 
   }
   
+  changeNumber = (numberToDif) => {
+    this.setState({
+      number: this.state.number + numberToDif
+    })
+  }
   render(){
 
     return (
@@ -20,6 +24,8 @@ export default class Counter extends React.Component {
         <div>Numero: {this.state.number}</div>
         <button onClick={this.plusOne}>Inc</button>
         <button onClick={this.minusOne}>Dec</button>
+        <button onClick={() => this.changeNumber(10)}>Inc10</button>
+        <button onClick={() => this.changeNumber(-10)}>Dec10</button>
       </div>
     )
   }
