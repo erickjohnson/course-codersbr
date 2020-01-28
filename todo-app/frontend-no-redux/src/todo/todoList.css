@@ -1,0 +1,8 @@
+.done {
+  color: green;
+  text-decoration: line-through;
+}
+
+.btn {
+  margin-right: 5px;
+}
