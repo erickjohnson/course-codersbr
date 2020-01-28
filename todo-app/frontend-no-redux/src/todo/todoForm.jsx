@@ -12,6 +12,8 @@ export default props => (
     <Grid mobile='12' tablet='3' desktop='2'>
       <IconButton styleBtn='primary' icon='plus'
         onClick={props.handleAdd} />
+        <IconButton styleBtn='primary' icon='search'
+          onClick={props.handleSearch} />
     </Grid>
   </div>
 )
