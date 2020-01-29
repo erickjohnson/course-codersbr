@@ -1,8 +1,6 @@
 import React from 'react'
 import IconButton from '../template/iconButton'
 
-import css from './todoList.css'
-
 export default props => {
 
   const renderRows = () => {
