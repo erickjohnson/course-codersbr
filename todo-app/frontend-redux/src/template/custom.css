@@ -1,0 +1,16 @@
+.done {
+  color: green;
+  text-decoration: line-through;
+}
+
+.btn {
+  margin-right: 5px;
+}
+
+tr td:first-child {
+  width: 84%;
+}
+
+.table>thead>tr>th {
+  padding-top: 40px;
+}
