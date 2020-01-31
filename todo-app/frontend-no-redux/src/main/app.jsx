@@ -5,6 +5,9 @@ import React from 'react'
 import Menu from '../template/menu'
 import Routes from './routes'
 
+
+import css from '../template/custom.css'
+
 export default props => (
   <div className='container'>
     <Menu />
