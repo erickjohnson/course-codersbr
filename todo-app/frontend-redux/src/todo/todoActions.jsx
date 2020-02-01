@@ -18,6 +18,7 @@ export const search = (description = "") => {
 
 export const addTodo = description => {
   //const request = ;
+  if (!description) return;
   return dispatch => {
     axios
       .post(URL, { description })
